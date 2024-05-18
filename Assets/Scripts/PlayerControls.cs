@@ -5,6 +5,12 @@ public class PlayerControls : MonoBehaviour
 {
     [SerializeField]
     InputAction movement;
+    [SerializeField]
+    float controlSpeed = 10f;
+    [SerializeField]
+    float xRange = 10f;
+    [SerializeField]
+    float yRange = 7f;
 
     // Start is called before the first frame update
     void Start()
@@ -28,10 +34,13 @@ public class PlayerControls : MonoBehaviour
         float horizontalThrow = movement.ReadValue<Vector2>().x;
         float verticalThrow = movement.ReadValue<Vector2>().y;
 
-        // float horizontalThrow = Input.GetAxis("Horizontal");
-        // float verticalThrow = Input.GetAxis("Vertical");
+        float xOffset = horizontalThrow * controlSpeed * Time.deltaTime;
+        float yOffset = verticalThrow * controlSpeed * Time.deltaTime;
+        float newXPos = transform.localPosition.x + xOffset;
+        float clampedXPos = Mathf.Clamp(newXPos, -xRange, xRange);
+        float newYPos = transform.localPosition.x + yOffset;
+        float clampedYPos = Mathf.Clamp(newYPos, -yRange, yRange);
 
-        Debug.Log(horizontalThrow);
-        Debug.Log(verticalThrow);
+        transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
 }
