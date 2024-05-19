@@ -4,18 +4,26 @@ using UnityEngine.InputSystem;
 
 public class PlayerControls : MonoBehaviour
 {
+    [Header("User Input Actions")]
     [SerializeField]
     InputAction movement;
     [SerializeField]
     InputAction fire;
+
+    [Header("General Setup Settings")]
+    [Tooltip("Controls how fast the player moves based on input")]
     [SerializeField]
     float controlSpeed = 10f;
+    [Tooltip("Max range player can move left and right")]
     [SerializeField]
     float xRange = 10f;
+    [Tooltip("Max range player can move up and down")]
     [SerializeField]
     float yRange = 7f;
     [SerializeField]
     GameObject[] lasers;
+
+[Header("Rotation Factors")]
     [SerializeField]
     float positionPitchFactor = -2f;
     [SerializeField]
