@@ -275,16 +275,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &838218969 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6516847542175645285, guid: c3f1097bbf93c944ca1896b21db58c4d, type: 3}
-  m_PrefabInstance: {fileID: 1416089156262207673}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1002430784 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9214889547041287924, guid: c3f1097bbf93c944ca1896b21db58c4d, type: 3}
-  m_PrefabInstance: {fileID: 1416089156262207673}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1715667222
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,38 +545,6 @@ PrefabInstance:
     - target: {fileID: 6451062972795452281, guid: c3f1097bbf93c944ca1896b21db58c4d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6877222136635972814, guid: c3f1097bbf93c944ca1896b21db58c4d, type: 3}
-      propertyPath: lasers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6877222136635972814, guid: c3f1097bbf93c944ca1896b21db58c4d, type: 3}
-      propertyPath: lasers.Array.data[0]
-      value: 
-      objectReference: {fileID: 1002430784}
-    - target: {fileID: 6877222136635972814, guid: c3f1097bbf93c944ca1896b21db58c4d, type: 3}
-      propertyPath: lasers.Array.data[1]
-      value: 
-      objectReference: {fileID: 838218969}
-    - target: {fileID: 6877222136635972814, guid: c3f1097bbf93c944ca1896b21db58c4d, type: 3}
-      propertyPath: fire.m_SingletonActionBindings.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6877222136635972814, guid: c3f1097bbf93c944ca1896b21db58c4d, type: 3}
-      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Id
-      value: b07d2e1b-b308-4e36-a7f2-3af1a5f10474
-      objectReference: {fileID: 0}
-    - target: {fileID: 6877222136635972814, guid: c3f1097bbf93c944ca1896b21db58c4d, type: 3}
-      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Path
-      value: <Mouse>/leftButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 6877222136635972814, guid: c3f1097bbf93c944ca1896b21db58c4d, type: 3}
-      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Action
-      value: Fire
-      objectReference: {fileID: 0}
-    - target: {fileID: 6877222136635972814, guid: c3f1097bbf93c944ca1896b21db58c4d, type: 3}
-      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Interactions
-      value: Press
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
