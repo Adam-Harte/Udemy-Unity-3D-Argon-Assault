@@ -1,14 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision other) {
-        Debug.Log($"Player Ship bumped into {other.gameObject.name}");
+    private void OnTriggerEnter(Collider other)
+    {
+        StartCrashSequence();
     }
 
-    private void OnTriggerEnter(Collider other) {
-        Debug.Log($"Player Ship triggered {other.gameObject.name}");
+    private void StartCrashSequence()
+    {
+        GetComponent<PlayerControls>().enabled = false;
+        Invoke("ReloadLevel", 1f);
+    }
+
+    private void ReloadLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 }
