@@ -195,6 +195,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4616518933971310417, guid: b71b4c06c7dfdd14dac0a26c7a1f6469, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4616518933971310417, guid: b71b4c06c7dfdd14dac0a26c7a1f6469, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4616518933971310417, guid: b71b4c06c7dfdd14dac0a26c7a1f6469, type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8726146122291427984, guid: b71b4c06c7dfdd14dac0a26c7a1f6469, type: 3}
       propertyPath: m_Name
       value: Laser Right
@@ -207,6 +219,11 @@ PrefabInstance:
 --- !u!4 &3456732564424167172 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2954472826071489376, guid: b71b4c06c7dfdd14dac0a26c7a1f6469, type: 3}
+  m_PrefabInstance: {fileID: 502330107114689636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9214889547041287924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8726146122291427984, guid: b71b4c06c7dfdd14dac0a26c7a1f6469, type: 3}
   m_PrefabInstance: {fileID: 502330107114689636}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3070911658815136466
@@ -257,6 +274,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5325009053538398582, guid: 53591d9c43de5e140bba95ee10f5914f, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5325009053538398582, guid: 53591d9c43de5e140bba95ee10f5914f, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5325009053538398582, guid: 53591d9c43de5e140bba95ee10f5914f, type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8137564369661303991, guid: 53591d9c43de5e140bba95ee10f5914f, type: 3}
       propertyPath: m_Name
       value: Laser Left
@@ -271,6 +300,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2375496411343338823, guid: 53591d9c43de5e140bba95ee10f5914f, type: 3}
   m_PrefabInstance: {fileID: 3070911658815136466}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6516847542175645285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8137564369661303991, guid: 53591d9c43de5e140bba95ee10f5914f, type: 3}
+  m_PrefabInstance: {fileID: 3070911658815136466}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4977287677759098819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -282,6 +316,38 @@ PrefabInstance:
     - target: {fileID: 1158561113003540375, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
       propertyPath: m_Name
       value: Player Ship
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901132420827140877, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901132420827140877, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 9214889547041287924}
+    - target: {fileID: 1901132420827140877, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6516847542175645285}
+    - target: {fileID: 1901132420827140877, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901132420827140877, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Id
+      value: b07d2e1b-b308-4e36-a7f2-3af1a5f10474
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901132420827140877, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Mouse>/leftButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901132420827140877, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901132420827140877, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Interactions
+      value: Press
       objectReference: {fileID: 0}
     - target: {fileID: 1972534431178057005, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
       propertyPath: m_LocalPosition.x
@@ -327,6 +393,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 173953239276423305, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
     - {fileID: 8082454958273026162, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+    - {fileID: 1211623892807469630, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1972534431178057005, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
       insertIndex: -1
@@ -334,8 +401,67 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1972534431178057005, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
       insertIndex: -1
       addedObject: {fileID: 750241332426809237}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1158561113003540375, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3356577571713780314}
+    - targetCorrespondingSourceObject: {fileID: 1158561113003540375, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6655592614591132761}
   m_SourcePrefab: {fileID: 100100000, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+--- !u!1 &6126841577515692116 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1158561113003540375, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+  m_PrefabInstance: {fileID: 4977287677759098819}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &3356577571713780314
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6126841577515692116}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.8, y: 3, z: 10.2}
+  m_Center: {x: 0, y: -0.026866078, z: 0.0000047683716}
+--- !u!54 &6655592614591132761
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6126841577515692116}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &6795150465380838126 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1972534431178057005, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
