@@ -576,6 +576,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVfx: {fileID: 0}
+  hitPoints: 1
+  hitScoreBonus: 1
+  killScoreBonus: 1
 --- !u!1001 &1416089156262207673
 PrefabInstance:
   m_ObjectHideFlags: 0
